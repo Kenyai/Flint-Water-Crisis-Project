@@ -1,0 +1,27 @@
+  
+body  {
+    background-image: url("images/flintkids.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#bgimg {
+	text-align: center;
+	margin-top: 35%;
+}
+
+#bgimg img{
+	width: 100%;
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+
+
+.links {
+	color: red;
+	margin-top: 35%;
+}

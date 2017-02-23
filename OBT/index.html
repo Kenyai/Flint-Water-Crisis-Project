@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Flint Michigan Water Crisis</title>
+  
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+<!-- navbar -->
+    <nav id="nav" class="navbar navbar-toggleable-md navbar-inverse fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Water is a Human Right</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page2.html">The Problem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lastpage.html">The Solution</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+   <!-- slideshow -->
+
+<div class="slideshow-container">
+
+
+  		<!-- counter within the slideshow will go here -->
+  
+  <div id="water">
+  <div id="body">
+    <div id="days-since">
+      <div id="day-counter">&nbsp;</div>
+      days since Flint Michigan has had clean water.<br/>
+     
+ 
+    </div>
+  </div>
+</div>
+ 
+  		<!-- end counter -->
+
+
+  <div class="mySlides ">
+    <img src="images/flint1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides ">
+    <img src="images/flint2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides ">
+    <img src="images/flint3.jpg" style="width:100%">
+  </div>
+
+</div>
+<br>
+
+
+
+
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+         
+          <h1>151</h1>
+          <br><br><p>The average number of water <br>bottles a flint family uses per day</p>
+        </div>
+
+        <div class="col-lg-4">
+          <h1>19</h1>
+          <br><br><p>How many more times corrosive the <br>water in Flint is than in Detroit</p>
+        </div>
+
+        <div class="col-lg-4">
+          <h1>33</h1>
+          <br><br><p>Cities across the United States <br>that have unsafe drinking water</p>
+        </div>
+      </div>
+
+
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-12">
+          <h2 class="featurette-heading">Heading will go here <span class="text-muted">sub heading light color</span></h2>
+          <p class="lead">timeline goes here</p>
+        </div>
+       
+      </div>
+
+      <hr class="featurette-divider">
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>footer goes here</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+
+    <!-- Bootstrap core JavaScript-->
+  
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+
+<!-- javacript for slideshow -->
+<script type="text/javascript"> var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+} 
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+
+</script>
+<!-- end javascript for slideshow --> 
+
+<script type="text/javascript">
+$(function() {
+   
+  $(document).tooltip({
+    items: "[title]",
+    content: function() {
+      var element = $(this);
+      return element.attr("title");
+    }
+  });
+  
+  $(document).ready(function() {
+      // TODO: Get incidents sorted by latest first
+      var incidents = [
+        {
+          "date": new Date("Apr 25, 2014"),
+          "isDart" : false
+        },
+        {
+          "date": new Date("Mar 1, 2015"),
+          "description": "Fall up stairs",
+          "isDart" : false
+        }
+        
+      ]
+    
+      var lastIncident = incidents[0];
+      var dartsYTD = incidents.filter(function(obj) {
+        return obj.isDart === true
+      }).length+20;
+            
+      // Update DOM
+          
+      // Day counter
+      var today = moment(new Date());
+      var lastIncidentDate = moment(lastIncident.date);
+      var daysSince = today.diff(lastIncidentDate, 'days');
+      $("#day-counter").html(daysSince);
+      
+      // Dart counter
+      //$("#dart-counter").html(dartsYTD);
+      var dartIcons = '';
+      for (var i=1; i<=dartsYTD; i++) {
+        dartIcons += '<i class="fa fa-male"></i>';
+      }
+      $("#dart-counter").html(dartIcons);
+      
+      // Last incident tooltip
+      $("#last-dart").attr("title", "The last DART event was<br/><b>" + lastIncident.description + "</b><p>This incident occurred on<br/><b>" + moment(lastIncident.date).format("M/D/YYYY") + "</b></p>");
+  });
+  
+})
+
+</script>
+<!-- start java for days-->
+
+    <script type="text/javascript" src="https:////cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+
+  </body>
+</html>
